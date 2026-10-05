@@ -1,0 +1,386 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red15\green112\blue1;\red0\green0\blue0;\red0\green0\blue255;
+\red144\green1\blue18;\red19\green118\blue70;\red14\green110\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c50196\c0;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c100000;
+\cssrgb\c63922\c8235\c8235;\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c50196;}
+\margl1440\margr1440\vieww21160\viewh13180\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+//----------------------------------\
+// LESSON 1 BASICS AND FUNCTIONS\
+//----------------------------------\
+// This is the coding assignment for the first week of the Intro to Programming course from Code the Dream. The concepts touched on in this assignment include:\
+//\'a0\'a0- The basic syntax of the JavaScript programming language\
+//\'a0\'a0- Basic programming concepts like variables, data types, and conditional statements\
+//\'a0\'a0- Troubleshooting programming problems\
+//\'a0\'a0- Encapsulating code with Functions\
+//\'a0\'a0- Passing Information Into Functions\
+// In this assignment you will write your own code. Your instructions are listed as "comments", meaning the instructions are grayed out and start with '//' at the beginning of the line of code. Put your answers immediately below the instructions for each question. There are sample console logs for all questions, but be sure to use some of your own values and function inputs as well.\
+// Make sure you run your code after EVERY question before moving on.\
+// For each question you should:\
+// - Write your code\
+// - Run your code with debugging statements (console.log) so that you can see the output of those statements in the console\
+// - Make corrections based on the console output\'a0\
+// - Once you feel the console output is correct, move onto the next question\
+// ---------- QUESTION 1 ----------\
+// Declaring and giving string values to variables.\
+// Create three variables.\'a0Make sure to use camelCase when you are naming your variable - this means all letters are lowercase except for the first letter of words that are in the middle.\'a0This is the accepted standard for JavaScript code.\'a0\'a0\
+// - First variable should be named "firstName" with the value of your first name as a string.\'a0\'a0\
+// - Second variable should be named "lastName" with the value of your last name as a string.\'a0\'a0\
+// - Third variable should be named "country" with the value of the name of the country where you were born as a string.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf0 \'a0\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 // EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q1: My first name is ", firstName);\
+//\'a0\'a0console.log ("Q1: My last name is ", lastName);\
+//\'a0\'a0console.log ("Q1: I was born in ", country);\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q1: My first name is Jane\
+//\'a0\'a0Q1: My last name is Doe\
+//\'a0\'a0Q1: I was born in Canada\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  firstName = \cf5 "Amanda"\cf0 ;\
+\cf4 const\cf0  lastName = \cf5 "Schiefen"\cf0 ;\
+\cf4 const\cf0  country = \cf5 "United States"\cf0 ;\
+console.log(\cf5 "Q1: My first name is "\cf0 , firstName);\
+console.log(\cf5 "Q1: My last name is "\cf0 , lastName);\
+console.log(\cf5 "Q1: I was born in "\cf0 , country);\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 2 ----------\
+// Declaring and giving numerical values to variables.\
+// Create four variables.\'a0\'a0\
+// - One named "floatingPoint" with the value of any floating point number you choose.\'a0\'a0\
+// - One named "integer" with the value of any integer number you choose.\'a0\'a0\
+// - One named "negative" with the value of any negative number you choose.\'a0\'a0\
+// STRETCH GOAL: You'll see "Stretch Goal"s throughout the course. Stretch Goals are optional, but are encouraged as they help you try your hand at something a little more advanced for the week/assignment/question.\'a0\
+// STRETCH GOAL:\
+// - Create a fourth variable titled "bigNumber" that is 16 or more numbers long. Write your console.log and see if the value displayed in the console matches exactly what you typed.\'a0\'a0\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q2: This is a floating point number: ", floatingPoint);\
+//\'a0\'a0console.log ("Q2: This is an integer: ", integer);\
+//\'a0\'a0console.log ("Q2: This is a negative number: ", negative);\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q2: This is a floating point number: 3.14\
+//\'a0\'a0Q2: This is an integer: 5\
+//\'a0\'a0Q2: This is a negative number: -6\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 let\cf0  floatingPoint = \cf6 3.15\cf0 ;\
+\cf4 let\cf0  integer = \cf6 42\cf0 ;\
+\cf4 let\cf0  negative = -\cf6 3\cf0 ;\
+\pard\pardeftab720\partightenfactor0
+\cf2 //Stretch Goal\
+\pard\pardeftab720\partightenfactor0
+\cf4 let\cf0  bigNumber = \cf6 12345678901234567890\cf0 ;\
+console.log(\cf5 "Q2: This is a floating point number: "\cf0 , floatingPoint);\
+console.log(\cf5 "Q2: This is an integer: "\cf0 , integer);\
+console.log(\cf5 "Q2: This is a negative number: "\cf0 , negative);\
+console.log(\cf5 "Q2: This is a big Number: "\cf0 , bigNumber);\
+\pard\pardeftab720\partightenfactor0
+\cf2 // it does not match my bigNumber I typed!\
+// ---------- QUESTION 3 ----------\
+// Assigning boolean values to variables.\
+// Create two variables.\'a0You can name them anything you want, but it is important to choose meaningful variable names that describe what they contain.\'a0This is all part of making your code readable and understandable.\
+// - Define the first variable and assign it a value of true.\'a0\'a0\'a0\
+// - Define a second variable and assign it a value of false.\'a0\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q3: The variable I made true is: ", myTrueVariable);\
+//\'a0\'a0console.log ("Q3: The variable I made false is: ", myFalseVariable);\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q3: The variable I made true is: true\
+//\'a0\'a0Q3: The variable I made false is: false\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  likesPizza = \cf4 true\cf0 ;\
+\cf4 const\cf0  hasDog = \cf4 false\cf0 ;\
+console.log(\cf5 "Q3: The variable I made true is: "\cf0 , likesPizza);\
+console.log(\cf5 "Q3: The variable I made false is: "\cf0 , hasDog);\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 4 ----------\
+// String Concatenation\
+// Create a variable that makes a concatenated string out of the variables you made in QUESTION 1. Be sure you're using your Q1 variables and not making new ones.\
+// There are often multiple ways to solve a problem.\
+// - First, use the + operator and create a string named firstHelloString that contains "Hello, my name is firstName lastName and I was born in country."\
+// - Second, use template literals and create a string named secondHelloString that contains the same string.\'a0\'a0\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q4 first: ", firstHelloString);\'a0\
+//\'a0\'a0console.log ("Q4 second: ", secondHelloString);\'a0\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q4 first: Hello, my name is Jane Doe and I was born in Canada.\'a0\
+//\'a0\'a0Q4 second: Hello, my name is Jane Doe and I was born in Canada.\'a0\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  firstHelloString = \cf5 "Hello, my name is "\cf0  + firstName + \cf5 " "\cf0  + lastName + \cf5 " and I was born in "\cf0  + country + \cf5 "."\cf0 ;\
+\cf4 const\cf0  secondHelloString = \cf5 `Hello, my name is \cf0 $\{firstName\} $\{lastName\}\cf5  and I was born in \cf0 $\{country\}\cf5 `\cf0 ;\
+console.log(\cf5 "Q4 first: "\cf0 , firstHelloString);\
+console.log(\cf5 "Q4 second: "\cf0 , secondHelloString);\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 5 ----------\
+// JavaScript Math\
+// Define two variables:\
+// - One to contain the floating point number minus the integer from Q2.\
+// - The second to contain the integer plus the negative number from Q2.\'a0\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q5 subtract: ", subtractionVariable);\'a0\
+//\'a0\'a0console.log ("Q5 add: ", additionVariable);\'a0\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q5 subtract: 2.87\'a0\
+//\'a0\'a0Q5 add: 5\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  subtractionVariable = floatingPoint - integer;\
+\cf4 const\cf0  additionVariable = integer + negative;\
+console.log(\cf5 "Q5 subtract: "\cf0 , subtractionVariable);\
+console.log(\cf5 "Q5 add: "\cf0 , additionVariable)\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 6 ----------\
+// String Methods\
+// Define four variables:\
+// - One named "nameLength" containing the length of your first name\'a0\
+// - One named "firstInitial" containing the first letter of your first name\
+// - One named "lastInitial" containing the LAST letter of your first name\
+// - One named "capitalize" containing your first name in all capital letters\
+// Use the firstName variable from QUESTION 1.\
+// STRETCH GOAL:\'a0\
+// - Create a variable named "weirdInitials". Using string methods, have weirdInitials result in the value of the LAST letters of any first and last names. Both these letters should also be capitalized in "weirdInitials".\'a0Example: "Sally Smith"'s weird initials should be "YH" and "Jose Rodriguez"'s inititals should be "EZ"\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q6 nameLength: ", nameLength);\'a0\
+//\'a0\'a0console.log ("Q6 firstInitial: ", firstInitial);\'a0\
+//\'a0\'a0console.log ("Q6 lastInitial: ", lastInitial);\'a0\
+//\'a0\'a0console.log ("Q6 capitalize: ", capitalize);\'a0\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q6 nameLength: 4\'a0\
+//\'a0\'a0Q6 firstInitial: J\'a0\
+//\'a0\'a0Q6 lastInitial: e\'a0\
+//\'a0\'a0Q6 capitalize: JANE\'a0\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  nameLength = \cf6 6\cf0 ;\
+\cf4 const\cf0  firstInitial = \cf5 'A'\cf0 ;\
+\cf4 const\cf0  lastInitial = \cf5 'a'\cf0 ;\
+\cf4 const\cf0  capitalize = \cf5 'AMANDA'\cf0 ;\
+console.log(\cf5 "Q6 nameLength: "\cf0 , nameLength);\
+console.log(\cf5 "Q6 firstInitial: "\cf0 , firstInitial);\
+console.log(\cf5 "Q6 lastInitial: "\cf0 , lastInitial);\
+console.log(\cf5 "Q6 capitalize: "\cf0 , capitalize);\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 7 ----------\
+// Logic Constructs\
+// - Declare a variable named 'answer'.\'a0\'a0\
+// - Create a conditional if-then-else statement that assigns the value true to 'answer' if the\'a0integer from Q2 is greater than 10 and assigns it false if it is not.\
+// STRETCH GOAL:\'a0\
+// - Define a new variable named 'stretchAnswer'\
+// - Make an if-then-else if-else statement that assigns 'stretchAnswer' the value of "less than" if the integer from Q2 is less than 10, "equal to" if it's equal, and "greater than" if it's greater.\
+// What type is each of your variables?\'a0You can find out by logging typeof(variable).\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q7 answer: ", answer);\
+//\'a0\'a0console.log ("Q7 answer type: ", typeof(answer));\
+//\'a0\'a0console.log ("Q7 stretchAnswer: ", stretchAnswer);\'a0\'a0\
+//\'a0\'a0console.log ("Q7 stretchAnswer type: ", typeof(stretchAnswer));\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q7 answer: true\
+//\'a0\'a0Q7 answer type: boolean\
+//\'a0\'a0Q7 stretchAnswer: greater than\
+//\'a0\'a0Q7 stretchAnswer type: string\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 let\cf0  answer = \cf6 15\cf0 \
+\cf4 if\cf0  (integer > \cf6 10\cf0 ) \{\
+\'a0\'a0\'a0 answer = \cf4 true\cf0 ;\
+\} \cf4 else\cf0  \{\
+\'a0\'a0\'a0 answer = \cf4 false\cf0 ;\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf0 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 console.log(\cf5 "Q7 answer: "\cf0 , answer);\
+console.log(\cf5 "Q7 answer type: "\cf0 , \cf4 typeof\cf0  (answer));\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 8 ----------\
+// More Logic!\
+// - Declare a variable called "age"\
+// - Assign it the value of your age in years\
+// - Create a conditional statement that will log the phrase "Age is just a number!" if your age is less than or equal to 30 and "Young at heart!" if your age is greater than 30.\
+// STRETCH GOAL: Combine your skills!\'a0Use template literals to log your name in this phrase: "Sally, age is just a number!" or "Jose, you're young at heart!" replacing these examples (Sally and Jose) with your first name instead.\
+// EXAMPLE LOG:\
+//\'a0\'a0Your logs will be part of the if-then-else\
+//\'a0\'a0console.log ("Q8: ", `Age is just a number, $\{firstName\}!`);\
+//\'a0\'a0console.log ("Q8: ", `Young at heart, $\{firstName\}!);\
+// EXAMPLE OUTPUT:\
+//\'a0Only one of these should be logged\
+//\'a0Q8: Age is just a number!\
+//\'a0Q8: Young at heart!\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  age = \cf6 29\cf0 \
+\cf4 if\cf0  (age <= \cf6 30\cf0 ) \{\
+\'a0\'a0\'a0 console.log(\cf5 "Q8: "\cf0 , \cf5 `Age is just a number, \cf0 $\{firstName\}\cf5 !`\cf0 );\
+\} \cf4 else\cf0  \{\
+\'a0\'a0\'a0 console.log(\cf5 "Q8: "\cf0 , \cf5 `Young at heart, \cf0 $\{firstName\}\cf5 !`\cf0 );\
+\};\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 9 ----------\
+// - Declare a variable named "exampleNum".\'a0\'a0\
+// - Give it the value of a floating point number with 4 decimal places.\'a0\'a0\
+// - Using a Number method round it to the nearest two decimal place. HINT: Look up the Number method toFixed().\
+// - Example if the number is 21.4572, exampleNum should become 21.46.\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log ("Q9 exampleNum before round: ", exampleNum);\
+//\'a0\'a0console.log ("Q9 exampleNum after round: ", exampleNum);\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q9 exampleNum before round: 21.4572\
+//\'a0\'a0Q9 exampleNum after round: 21.46\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  exampleNum = \cf6 3.1415\cf0 ;\
+console.log(\cf5 "Q9 exampleNum before round: "\cf0 , exampleNum);\
+console.log(\cf5 "Q9 exampleNum after round: "\cf0 , exampleNum.toFixed(\cf6 2\cf0 ));\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf0 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 // ---------- QUESTION 10 ----------\
+// Functions\
+// - Create a function titled 'assignMessageString'.\'a0Functions also use camelCase as a naming convention.\'a0Because functions represent actions, their names should usually begin with a verb.\'a0\'a0\
+// - Inside the function, declare a variable named 'message' and assign it the string "Welcome to Code the Dream!".\'a0Return the 'message' variable.\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log("Q10: ", assignMessageString());\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q10: Welcome to Code the Dream!\
+//PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 function\cf0  assignMessageString(message) \{\
+\'a0\'a0\'a0 \cf4 return\cf0  message = \cf5 "Welcome to Code the Dream!"\cf0 \
+\};\
+console.log(\cf5 "Q10: "\cf0 , assignMessageString());\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 11 ----------\
+// Another function\
+// - Create a function called 'combineStrings'.\'a0\'a0\
+// - Inside the function, declare two variables named 'string1' and 'string2'.\'a0\'a0\
+// - Assign them the strings 'Good' and 'Evening' respectively.\'a0Return the two strings concatenated with a space in between.\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log("Q11: ", combineStrings());\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q11: Good Evening\
+//PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 function\cf0  combineStrings() \{\
+\'a0\'a0\'a0 \cf4 let\cf0  string1 = \cf5 "Good"\cf0 \
+\'a0\'a0\'a0 \cf4 let\cf0  string2 = \cf5 "Evening"\cf0 \
+\'a0\'a0\'a0 \cf4 return\cf0  string1 + \cf5 " "\cf0  + string2;\
+\};\
+console.log(\cf5 "Q11: "\cf0 , combineStrings());\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 12 ----------\
+// Parameters\
+// - Create a function called 'useParams' that takes one parameter and returns that parameter with all letters capitalized.\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log("Q12: ", useParams("hello"));\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q12: HELLO\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 function\cf0  useParams(word) \{\
+\'a0\'a0\'a0 \cf4 return\cf0  word.toUpperCase();\
+\};\
+console.log(\cf5 "Q12: "\cf0 , useParams(\cf5 "hello"\cf0 ));\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 13 ----------\
+// - Create two variables named 'word1' and 'word2' and assign them any strings you want.\'a0\'a0\
+// - Then, create a function called 'biggestStringLength' that takes word1 and word2 as parameters and returns the length of the longer string.\'a0\
+// - If they are of equal length, just return that length.\'a0\'a0\
+// - Stretch your skills by making an empty string and seeing what happens in that situation.\
+// EXAMPLE LOG:\
+//\'a0\'a0console.log("Q13: ", biggestStringLength(word1, word2));\
+// EXAMPLE OUTPUT: (if your word1 was 'Code' and word2 was 'Dream')\
+//\'a0\'a0Q13: 5\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 const\cf0  word1 = \cf5 "Bless"\cf0 ;\
+\cf4 const\cf0  word2 = \cf5 "Up"\cf0 ;\
+\cf4 function\cf0  biggestStringLength(word1, word2) \{\
+\'a0\'a0\'a0 \cf4 return\cf0  (word1 + word2).length;\
+\};\
+console.log(\cf5 "Q13: "\cf0 , biggestStringLength(word1, word2));\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 14 ----------\
+// Random Number Generator\
+// - Create a function named "returnRandomNum" which will return a random integer between 1 and 3 inclusive (1, 2 or 3)\
+//\'a0You'll want to use the following methods:\
+// - Math.random() which returns a number between 0 and 1 (greater or equal to 0, less than 1)\
+// - Math.floor() rounds a number down to the nearest whole integer\
+// - For example: Math.floor(Math.random() \\* 10) returns a random integer between 0 and 9 (both included)\
+// - HINT: you'll need to adjust the range above. 'Math.random() \\* 3' gives a range from 0 up\
+//\'a0\'a0to but not including 3. Math.floor() of that gives a whole number from 0 to 2. Think about\
+//\'a0\'a0what you need to add to shift that range so it becomes 1 to 3 instead of 0 to 2.\
+// EXAMPLE LOG:\
+//\'a0\'a0Log this several times so you see different numbers being logged\
+//\'a0\'a0console.log ("Q14 random number: ", returnRandomNum());\
+//\'a0\'a0console.log ("Q14 random number: ", returnRandomNum());\
+//\'a0\'a0console.log ("Q14 random number: ", returnRandomNum());\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf0 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 // EXAMPLE OUTPUT:\
+//\'a0\'a0Q14 random number: 1\
+//\'a0\'a0Q14 random number: 3\
+//\'a0\'a0Q14 random number: 1\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 function\cf0  returnRandomNum() \{\
+\'a0\'a0\'a0 \cf4 return \cf7 Math\cf0 .floor(\cf7 Math\cf0 .random() * \cf6 3\cf0 ) + \cf6 1\cf0 ;\
+\}\
+console.log(\cf5 "Q14 random number: "\cf0 , returnRandomNum());\
+console.log(\cf5 "Q14 random number: "\cf0 , returnRandomNum());\
+console.log(\cf5 "Q14 random number: "\cf0 , returnRandomNum());\
+console.log(\cf5 "Q14 random number: "\cf0 , returnRandomNum());\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- QUESTION 15 ----------\
+// Magic8Ball\
+// - Create a function named "shakeMagic8Ball" that will return one of the strings described below\
+// - Using the random number function created in Q14, code the logic for a Magic 8 Ball\'a0\
+// - If your random number is 1, return the phrase "It is certain"\
+// - If it is 2, return "Perhaps"\
+// - If it is 3, return "Absolutely not"\
+// EXAMPLE LOG:\
+//\'a0\'a0Log this several times so you see different answers being logged\
+//\'a0\'a0console.log ("Q15 Magic 8 Ball: ", shakeMagic8Ball());\
+// EXAMPLE OUTPUT:\
+//\'a0\'a0Q15 Magic 8 Ball: It is certain\
+//\'a0\'a0Q15 Magic 8 Ball: Perhaps\
+//\'a0\'a0Q15 Magic 8 Ball: Absolutely not\
+// PUT YOUR CODE HERE\
+\pard\pardeftab720\partightenfactor0
+\cf4 function\cf0  shakeMagic8Ball() \{\
+\'a0\'a0\'a0 \cf4 if\cf0  (returnRandomNum() === \cf6 1\cf0 ) \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 return \cf5 "It is certain"\cf0 ;\
+\'a0\'a0\'a0 \} \cf4 else if\cf0  (returnRandomNum() === \cf6 2\cf0 ) \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 return \cf5 "Perhaps"\cf0 ;\
+\'a0\'a0\'a0 \} \cf4 else\cf0  \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 return \cf5 "Absolutely not"\cf0 ;\
+\'a0\'a0\'a0 \}\
+\}\
+console.log(\cf5 "Q15 Magic 8 Ball: "\cf0 , shakeMagic8Ball());\
+\pard\pardeftab720\partightenfactor0
+\cf2 // ---------- GITHUB TASK ----------\
+// In this week's lesson content, you created your first GitHub repository. Confirm that your GitHub profile has a repository that:\
+// - Is named with your name and class name.\
+// - Is public.\
+// - Contains a blank README.md file\
+// Submit the link to the GitHub repository in the URL2 field in your assignment submission form.\
+// NO CODE FOR THIS TASK\
+}
