@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(195, 62, 82);
+  color:white; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color:antiquewhite;
+    scroll-margin-top: 4rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color:rgb(140, 40, 55);
+    position: sticky;
+    top:0;
+}
+
+nav a {
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.about{
+    text-align: center;
+}
+
+.experience {
+    list-style: none;
+    background-color: rgba(148, 47, 47, 0.441);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.connect-links {
+  display: flex;                      
+  justify-content: center;
+  gap: 1rem;                           
+  list-style: none;                    
+  padding: 0;                          
+}
+
+.connect-links a {
+  color: antiquewhite;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid antiquewhite;
+  border-radius: 6px;
+}
+
+.connect-links a:hover {
+  background-color: antiquewhite;
+  color: darkred;     
+}
