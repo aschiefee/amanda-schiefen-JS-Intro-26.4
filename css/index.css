@@ -83,3 +83,17 @@ nav a:hover {
   background-color: antiquewhite;
   color: darkred;     
 }
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    padding: 0.5rem 1rem;
+    border: 1px solid antiquewhite;
+    border-radius: 4px;
+}
