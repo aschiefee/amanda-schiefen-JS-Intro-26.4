@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(195, 62, 82);
   color:white; 
@@ -96,4 +97,103 @@ nav a:hover {
     padding: 0.5rem 1rem;
     border: 1px solid antiquewhite;
     border-radius: 4px;
+}
+
+/* MESSAGE FORM */
+
+#leave-message {
+    scroll-margin-top: 4 rem;
+}
+
+form[name="leave-message"] label,
+form[name="leave-message"] input,
+form[name="leave-message"] textarea {
+    display: block;
+    width: 100;
+    box-sizing: border-box;
+}
+
+form[name="leave-message"] label {
+    margin-bottom: 0.25rem;
+    color: antiquewhite;
+}
+
+form[name="leave-message"] input,
+form[name="leave-message"] textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-size: 1rem;
+    border: 2px solid antiquewhite;
+    border-radius: 6px;
+}
+
+form[name="leave-message"] textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+form[name="leave-message"] button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: antiquewhite;
+    background-color: transparent;
+    border: 2px solid antiquewhite;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form[name="leave_message"] botton:hover {
+    background-color: antiquewhite;
+    color: darkred;
+}
+
+/*MESSAGE LIST */
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#message li {
+    background-color: rgba(148, 47, 47, 0.441);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1 rem;
+}
+
+#messages li a {
+    color: antiquewhite;
+    font-weight: 600;
+}
+
+#messages li button {
+    margin-left: 1rem;
+    padding: 0.4rem 1rem;
+    min-height: 44px;
+    color: antiquewhite;
+    background-color: transparent;
+    border: 1 px solid antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#messages li button:hover {
+    background-color:antiquewhite;
+    color: darkred;
+}
+
+@media (max-width: 600px) {
+    form [name="leave_message"] button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+
+#message li button {
+    display: block;
+    margin: 0.75rem 0 0;
+    width: 100%;
+    }
 }
