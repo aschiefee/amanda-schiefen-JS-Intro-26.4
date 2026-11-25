@@ -102,39 +102,40 @@ nav a:hover {
 /* MESSAGE FORM */
 
 #leave-message {
-    scroll-margin-top: 4 rem;
+    scroll-margin-top: 4rem;      /* this one is an id, so it keeps the hyphen */
 }
 
-form[name="leave-message"] label,
-form[name="leave-message"] input,
-form[name="leave-message"] textarea {
+/* name="leave_message" uses an underscore, with no space after "form" */
+form[name="leave_message"] label,
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
     display: block;
-    width: 100;
+    width: 100%;
     box-sizing: border-box;
 }
 
-form[name="leave-message"] label {
+form[name="leave_message"] label {
     margin-bottom: 0.25rem;
     color: antiquewhite;
 }
 
-form[name="leave-message"] input,
-form[name="leave-message"] textarea {
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
     padding: 0.75rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
     font-size: 1rem;
     border: 2px solid antiquewhite;
     border-radius: 6px;
 }
 
-form[name="leave-message"] textarea {
+form[name="leave_message"] textarea {
     min-height: 8rem;
     resize: vertical;
 }
 
-form[name="leave-message"] button {
+form[name="leave_message"] button {
     padding: 0.75rem 1.5rem;
+    min-height: 44px;
     font-size: 1rem;
     font-weight: 600;
     color: antiquewhite;
@@ -144,23 +145,23 @@ form[name="leave-message"] button {
     cursor: pointer;
 }
 
-form[name="leave_message"] botton:hover {
+form[name="leave_message"] button:hover {
     background-color: antiquewhite;
     color: darkred;
 }
 
-/*MESSAGE LIST */
+/* MESSAGE LIST */
 
 #messages ul {
     list-style: none;
     padding: 0;
 }
 
-#message li {
+#messages li {
     background-color: rgba(148, 47, 47, 0.441);
     border-radius: 8px;
     padding: 1rem;
-    margin-bottom: 1 rem;
+    margin-bottom: 1rem;
 }
 
 #messages li a {
@@ -174,26 +175,27 @@ form[name="leave_message"] botton:hover {
     min-height: 44px;
     color: antiquewhite;
     background-color: transparent;
-    border: 1 px solid antiquewhite;
+    border: 1px solid antiquewhite;
     border-radius: 4px;
     cursor: pointer;
 }
 
 #messages li button:hover {
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     color: darkred;
 }
 
+/* PHONES */
+
 @media (max-width: 600px) {
-    form [name="leave_message"] button {
+    form[name="leave_message"] button {
         width: 100%;
         min-height: 48px;
     }
 
-
-#message li button {
-    display: block;
-    margin: 0.75rem 0 0;
-    width: 100%;
+    #messages li button {
+        display: block;
+        margin: 0.75rem 0 0;
+        width: 100%;
     }
 }
